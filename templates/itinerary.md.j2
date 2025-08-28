@@ -1,0 +1,35 @@
+---
+title: {{ data.title }}
+lang: {{ data.language or 'tr' }}
+---
+
+# {{ data.title }}
+
+**Bölge:** {{ data.region }}
+
+{% if data.logistics %}
+## Lojistik
+- **Sezon:** {{ data.logistics.season or '-' }}
+- **En iyi zaman:** {{ data.logistics.best_time or '-' }}
+- **Ulaşım:** {{ data.logistics.transport or '-' }}
+{% if data.logistics.tips %}- **İpuçları:**
+{% for tip in data.logistics.tips %}  - {{ tip }}
+{% endfor %}
+{% endif %}
+{% endif %}
+
+## Program
+{% for day in data.days %}
+### {{ day.label or ('Gün ' ~ loop.index) }}
+{% if day.notes %}> {{ day.notes }}
+{% endif %}
+| Saat | Durak | Tür | Süre (dk) | Ücret (TRY) |
+|------|------|-----|-----------:|------------:|
+{% for s in day.stops %}| {{ s.time or '-' }} | {{ s.name }} | {{ s.type or '-' }} | {{ s.duration_min or '-' }} | {{ s.cost_try or '-' }} |
+{% endfor %}
+
+{% endfor %}
+
+## Toplamlar
+- **Tahmini bütçe:** {{ data.totals.estimated_cost_try or '-' }} TRY
+- **Tahmini süre:** {{ data.totals.total_duration_min or '-' }} dk

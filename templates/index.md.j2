@@ -1,1 +1,7 @@
+# Türkiye Turları
+Aşağıda mevcut turlar listelenmiştir.
 
+| ID | Başlık | Bölge | Gün sayısı |
+|----|--------|-------|-----------:|
+{% for it in items %}| [{{ it.id }}]({{ it.id }}.md) | {{ it.title }} | {{ it.region }} | {{ it.days|length }} |
+{% endfor %}
