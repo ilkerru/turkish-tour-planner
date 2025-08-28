@@ -1,0 +1,12 @@
+site_name: Türkiye Turları
+site_description: Şehir şehir programlı gezi planları
+theme:
+  name: material
+  language: tr
+nav:
+  - Anasayfa: index.md
+markdown_extensions:
+  - tables
+  - admonition
+  - toc:
+      permalink: true
