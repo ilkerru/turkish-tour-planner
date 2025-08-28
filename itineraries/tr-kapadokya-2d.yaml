@@ -1,0 +1,40 @@
+id: tr-kapadokya-2d
+title: Kapadokya — 2 Günlük Hızlı Tur
+region: Nevşehir
+language: tr
+logistics:
+  season: İlkbahar/sonbahar
+  best_time: Gün doğumu balon uçuşu
+  transport: Özel araç + yürüyüş
+  tips:
+    - Balon rezervasyonunu en az 2-3 gün önce yap.
+    - Açık hava müzeleri için rahat ayakkabı.
+days:
+  - label: "1. Gün — Göreme & Avanos"
+    stops:
+      - time: "05:00"
+        name: Balon kalkış alanı (gün doğumu)
+        type: deneyim
+        duration_min: 180
+        cost_try: 6500
+      - time: "10:00"
+        name: Göreme Açık Hava Müzesi
+        type: müze
+        duration_min: 120
+      - time: "13:00"
+        name: Avanos (çanak atölyesi)
+        type: atölye
+        duration_min: 90
+  - label: "2. Gün — Uçhisar & Derinkuyu"
+    stops:
+      - time: "09:00"
+        name: Uçhisar Kalesi
+        type: kale
+        duration_min: 60
+      - time: "11:00"
+        name: Derinkuyu Yeraltı Şehri
+        type: müze
+        duration_min: 120
+totals:
+  estimated_cost_try: 9000
+  total_duration_min: 690
