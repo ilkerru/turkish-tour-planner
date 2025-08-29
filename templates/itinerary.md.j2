@@ -21,15 +21,42 @@ lang: {{ data.language or 'tr' }}
 ## Program
 {% for day in data.days %}
 ### {{ day.label or ('Gün ' ~ loop.index) }}
+{% if day.cluster %}_Yakın yürüyüş klasteri:_ **{{ day.cluster }}**{% endif %}
 {% if day.notes %}> {{ day.notes }}
 {% endif %}
+
 | Saat | Durak | Tür | Süre (dk) | Ücret (TRY) |
 |------|------|-----|-----------:|------------:|
 {% for s in day.stops %}| {{ s.time or '-' }} | {{ s.name }} | {{ s.type or '-' }} | {{ s.duration_min or '-' }} | {{ s.cost_try or '-' }} |
 {% endfor %}
 
+{% if day.food %}
+**Yeme‑İçme (yakın öneriler)**  
+{% for f in day.food %}- **{{ f.name }}**{% if f.dish %} — {{ f.dish }}{% endif %}{% if f.budget %} ({{ f.budget }}){% endif %}{% if f.address %} — {{ f.address }}{% endif %}{% if f.notes %} — _{{ f.notes }}_{% endif %}
+{% endfor %}
+{% endif %}
+
+{% set closed = day.stops | selectattr('closed_days','defined') | list %}
+{% if closed and closed|length > 0 %}
+**Kapalı Günler (bilgi amaçlı, resmi siteleri teyit edin)**  
+{% for s in closed %}- **{{ s.name }}** — {{ (s.closed_days | join(', ')) if s.closed_days else '' }}
+{% endfor %}
+{% endif %}
+
+{% set vb = day.stops | selectattr('visit_hours','defined') | list %}
+{% set bk = day.stops | selectattr('booking','defined') | list %}
+{% if vb or bk %}
+**Ziyaret Saatleri & Bilet/Rezervasyon**  
+{% for s in day.stops %}
+{% if s.visit_hours or s.booking %}- **{{ s.name }}**{% if s.visit_hours %}: _{{ s.visit_hours }}_{% endif %}{% if s.booking and s.booking.url %} — [Bilet/Rezervasyon]({{ s.booking.url }}){% endif %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
 {% endfor %}
 
+{% if data.totals %}
 ## Toplamlar
 - **Tahmini bütçe:** {{ data.totals.estimated_cost_try or '-' }} TRY
 - **Tahmini süre:** {{ data.totals.total_duration_min or '-' }} dk
+{% endif %}
