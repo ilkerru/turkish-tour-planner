@@ -1,0 +1,190 @@
+
+id: tr-istanbul-fatih-yd
+title: İstanbul (Fatih) — Yürüyerek Keşif (3 Gün, Klasterli)
+region: İstanbul / Fatih
+language: tr
+logistics:
+  season: İlkbahar & Sonbahar
+  best_time: Sabah erken, hafta içi
+  transport: Tamamı yürüyüş + T1 Tramvay destekli
+  tips:
+    - Cami ve müzelerde yoğunluğu azaltmak için açılış saatlerine yakın gidin.
+    - Balat yokuşlarına uygun rahat ayakkabı giyin.
+    - Öğünlerde kısa kuyruklar için öğle saatlerini esnek tutun.
+days:
+  - label: "1. Gün — Sultanahmet & Gülhane"
+    cluster: "Ayasofya • Sultanahmet • Topkapı • Arkeoloji • Gülhane (hepsi 5–10 dk yürüyüş)"
+    notes: "Müzeler arasında gölgeli yollardan yürüyüş; öğleden sonra parkta dinlenme."
+    stops:
+      - time: "09:00"
+        name: Ayasofya-i Kebir Camii
+        type: cami
+        duration_min: 60
+        lat: 41.008583
+        lon: 28.980175
+        visit_hours: "Ziyaret ibadet saatleri dışında; öğle/akşam namazı öncesi kısıtlamalar olabilir."
+      - time: "10:15"
+        name: Sultanahmet Camii
+        type: cami
+        duration_min: 45
+        lat: 41.005409
+        lon: 28.976813
+        visit_hours: "Ziyaret ibadet saatleri dışında; Cuma günleri yoğunluk artar."
+      - time: "11:15"
+        name: Topkapı Sarayı
+        type: saray
+        duration_min: 120
+        lat: 41.011520
+        lon: 28.983379
+        visit_hours: "Genelde 09:00–18:00; bazı günler kapalı olabilir (resmi siteyi kontrol edin)."
+        closed_days: ["Salı — sık görülür, resmi siteden teyit edin"]
+        booking:
+          url: "https://muze.gov.tr"
+      - time: "14:00"
+        name: İstanbul Arkeoloji Müzeleri
+        type: müze
+        duration_min: 90
+        lat: 41.011315
+        lon: 28.981711
+        visit_hours: "Genelde 09:00–18:00; zamanlar değişebilir."
+        closed_days: ["Pazartesi — dönemsel, resmi siteden teyit"]
+        booking:
+          url: "https://muze.gov.tr"
+      - time: "15:45"
+        name: Gülhane Parkı yürüyüş
+        type: yürüyüş
+        duration_min: 45
+        lat: 41.012251
+        lon: 28.979819
+        visit_hours: "Açık alan; park kapıları saatlere tabi olabilir."
+    food:
+      - name: "Tarihi Sultanahmet Köftecisi Selim Usta"
+        dish: "köfte & piyaz"
+        budget: "₺₺"
+        address: "Divanyolu Cd. No:12"
+        notes: "Öğle için ideal; yoğunluk olabilir."
+      - name: "Şerbethane"
+        dish: "Osmanlı tatlıları"
+        budget: "₺₺"
+        address: "Sultanahmet Meydanı"
+      - name: "Hafız Mustafa (Sirkeci)"
+        dish: "baklava, sütlaç"
+        budget: "₺₋₺₺"
+        address: "Hocapaşa / Sirkeci"
+        notes: "Tatlı & çay molası için yakın."
+  - label: "2. Gün — Eminönü, Tahtakale & Süleymaniye"
+    cluster: "Mısır Çarşısı • Rüstem Paşa • Mahmutpaşa • Kapalıçarşı • Süleymaniye • Vefa • Şehzade"
+    notes: "Pazarlık ve çarşı yürüyüşlerine zaman ayırın; gün batımına yakın Süleymaniye manzarası."
+    stops:
+      - time: "09:00"
+        name: Mısır Çarşısı (Spice Bazaar)
+        type: çarşı
+        duration_min: 60
+        lat: 41.0164
+        lon: 28.9702
+        visit_hours: "Genelde 09:00–19:00; bayramlarda değişebilir."
+      - time: "10:15"
+        name: Rüstem Paşa Camii
+        type: cami
+        duration_min: 30
+        lat: 41.0173
+        lon: 28.9696
+        visit_hours: "Ziyaret ibadet saatleri dışında."
+      - time: "11:00"
+        name: Mahmutpaşa Yokuşu
+        type: alışveriş
+        duration_min: 45
+        lat: 41.0148
+        lon: 28.9715
+      - time: "12:00"
+        name: Kapalıçarşı (Nuruosmaniye Kapısı)
+        type: çarşı
+        duration_min: 90
+        lat: 41.010734
+        lon: 28.968030
+        visit_hours: "Genelde 10:00–19:00."
+        closed_days: ["Pazar — geleneksel olarak kapalı"]
+      - time: "14:00"
+        name: Süleymaniye Camii
+        type: cami
+        duration_min: 60
+        lat: 41.016430
+        lon: 28.963793
+        visit_hours: "Ziyaret ibadet saatleri dışında; öğleden sonra daha sakindir."
+      - time: "15:30"
+        name: Vefa Bozacısı
+        type: yeme-içme
+        duration_min: 30
+        lat: 41.018257
+        lon: 28.951572
+        visit_hours: "Mevsime göre saatler değişebilir."
+      - time: "16:30"
+        name: Şehzade Camii
+        type: cami
+        duration_min: 45
+        lat: 41.016792
+        lon: 28.955879
+        visit_hours: "Ziyaret ibadet saatleri dışında."
+    food:
+      - name: "Pandeli (Mısır Çarşısı üst kat)"
+        dish: "klasik Türk mutfağı"
+        budget: "₺₺₺"
+        address: "Mısır Çarşısı içi"
+        notes: "Rezervasyon önerilir."
+      - name: "Şehzade Cağ Kebap (Hocapaşa)"
+        dish: "cağ kebabı"
+        budget: "₺₺"
+        address: "Hocapaşa, Sirkeci"
+      - name: "Kurukahveci Mehmet Efendi"
+        dish: "Türk kahvesi"
+        budget: "₺"
+        address: "Tahmis Sk., Eminönü"
+        notes: "Kahve molası, hızlı kuyruk."
+  - label: "3. Gün — Fener & Balat & Ayvansaray"
+    cluster: "Fener Rum Patrikhanesi • Fener-Balat sokakları • Ayvansaray • Kariye"
+    notes: "Yokuşlu sokaklar ve fotoğraf noktaları; iç mekanlar için güncel ziyaret saatlerini kontrol edin."
+    stops:
+      - time: "09:00"
+        name: Fener Rum Patrikhanesi
+        type: dini yapı
+        duration_min: 45
+        lat: 41.030171
+        lon: 28.949574
+        visit_hours: "Dini takvime bağlı; sabah saatleri daha sakindir."
+      - time: "10:00"
+        name: Fener-Balat sokakları (Renkli Evler & Merdivenli Yokuş)"
+        type: yürüyüş
+        duration_min: 120
+        lat: 41.02974
+        lon: 28.94995
+      - time: "12:30"
+        name: Balat Çarşısı
+        type: çarşı
+        duration_min: 45
+        lat: 41.0287
+        lon: 28.9491
+      - time: "14:00"
+        name: Kariye Camii (eski Chora)"
+        type: müze/cami
+        duration_min: 60
+        lat: 41.030072
+        lon: 28.939385
+        visit_hours: "Ziyaret ibadet saatleri dışında; restorasyon ve statüye göre değişebilir."
+        closed_days: ["Dönemsel değişken — resmi siteden teyit"]
+    food:
+      - name: "Forno Balat"
+        dish: "lahmacun & pide"
+        budget: "₺₋₺₺"
+        address: "Balat, Tahta Minare Sk."
+      - name: "Agora Meyhanesi 1890"
+        dish: "meze & balık (akşam)"
+        budget: "₺₺₺"
+        address: "Balat, Mürselpaşa Cd."
+        notes: "Akşam planı için uygundur."
+      - name: "Coffee Department"
+        dish: "kahve & tatlı"
+        budget: "₺₋₺₺"
+        address: "Balat, Yıldırım Cd."
+totals:
+  estimated_cost_try: 0
+  total_duration_min: 0

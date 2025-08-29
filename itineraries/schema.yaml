@@ -1,1 +1,59 @@
-
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: Itinerary
+type: object
+properties:
+  id: { type: string }
+  title: { type: string }
+  region: { type: string }
+  language: { type: string, enum: [tr, en], default: tr }
+  logistics:
+    type: object
+    properties:
+      season: { type: string }
+      best_time: { type: string }
+      transport: { type: string }
+      tips: { type: array, items: { type: string } }
+  days:
+    type: array
+    items:
+      type: object
+      properties:
+        label: { type: string }
+        notes: { type: string }
+        cluster: { type: string }
+        food:
+          type: array
+          items:
+            type: object
+            properties:
+              name: { type: string }
+              dish: { type: string }
+              budget: { type: string }
+              address: { type: string }
+              notes: { type: string }
+        stops:
+          type: array
+          items:
+            type: object
+            properties:
+              time: { type: string }
+              name: { type: string }
+              type: { type: string }
+              address: { type: string }
+              duration_min: { type: integer }
+              cost_try: { type: number }
+              lat: { type: number }
+              lon: { type: number }
+              visit_hours: { type: string }
+              closed_days: { type: array, items: { type: string } }
+              booking:
+                type: object
+                properties:
+                  url: { type: string }
+              notes: { type: string }
+  totals:
+    type: object
+    properties:
+      estimated_cost_try: { type: number }
+      total_duration_min: { type: integer }
+required: [id, title, region, days]
