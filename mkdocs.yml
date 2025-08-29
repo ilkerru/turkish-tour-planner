@@ -1,5 +1,5 @@
-site_name: Fatih Yürünebilir Rotalar
-site_description: İstanbul/Fatih için yürüme mesafesine göre gruplanmış gezi planı
+site_name: İstanbul Yürünebilir Rotalar
+site_description: Fatih, Kuzguncuk, Beyoğlu, Üsküdar, Kadıköy için klasterli yürüyüş planları
 theme:
   name: material
   language: tr
