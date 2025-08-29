@@ -1,0 +1,108 @@
+id: tr-istanbul-beyoglu-2d
+title: İstanbul (Beyoğlu) — Pasajlar, Kule ve Müzeler (2 Gün)
+region: İstanbul / Beyoğlu
+language: tr
+logistics:
+  season: Dört mevsim
+  best_time: Hafta içi öğle sonrası & akşam
+  transport: Yürüyüş + Füniküler/Tramvay
+  tips:
+  - Akşam kalabalığı için yavaş rota planı yapın.
+  - Müze/galeri kapalı günlerini kontrol edin.
+days:
+- label: Gün 1 — Galata & Karaköy
+  cluster: Galata Kulesi • Bankalar Caddesi • Karaköy (5–15 dk)
+  notes: Kule sabah erken daha rahattır.
+  stops:
+  - time: 09:30
+    name: Galata Kulesi
+    type: müze
+    duration_min: 60
+    lat: 41.0256
+    lon: 28.9742
+    visit_hours: Genelde 08:30–23:00 (mevsimsel).
+    booking:
+      url: https://muze.gov.tr
+  - time: '10:45'
+    name: Bankalar Caddesi yürüyüşü
+    type: yürüyüş
+    duration_min: 45
+    lat: 41.0246
+    lon: 28.973
+  - time: '12:00'
+    name: Karaköy sahil & Galataport
+    type: yürüyüş
+    duration_min: 60
+    lat: 41.0255
+    lon: 28.9774
+  - time: '14:00'
+    name: İstanbul Modern (Galataport)
+    type: müze
+    duration_min: 90
+    lat: 41.0282
+    lon: 28.9816
+    visit_hours: Saatler değişkendir.
+    booking:
+      url: https://www.istanbulmodern.org/en
+  - time: '16:00'
+    name: Kemankeş Karamustafa Paşa Camii
+    type: cami
+    duration_min: 20
+    lat: 41.0227
+    lon: 28.9735
+    visit_hours: İbadet saatleri dışında.
+  food:
+  - name: Karaköy Güllüoğlu
+    dish: baklava
+    budget: ₺₋₺₺
+    address: Karaköy
+  - name: Namlı Gurme
+    dish: şarküteri/kahvaltı
+    budget: ₺₋₺₺
+    address: Karaköy
+- label: Gün 2 — İstiklal, Pera & Taksim
+  cluster: İstiklal Caddesi • Pera Müzesi • St. Antuan • Taksim (5–15 dk)
+  notes: Pasajları (Atlas, Çiçek, Avrupa) gezerek ilerleyin.
+  stops:
+  - time: '10:00'
+    name: St. Antuan Katolik Kilisesi
+    type: kilise
+    duration_min: 30
+    lat: 41.0333
+    lon: 28.9775
+    visit_hours: Açık saatleri gün içinde yayımlanır.
+  - time: '10:45'
+    name: Pera Müzesi
+    type: müze
+    duration_min: 75
+    lat: 41.0312
+    lon: 28.9753
+    closed_days:
+    - Pazartesi — sık görülür
+    visit_hours: Genelde 10:00–19:00.
+    booking:
+      url: https://www.peramuzesi.org.tr
+  - time: '12:30'
+    name: İstiklal Pasajları yürüyüşü
+    type: yürüyüş
+    duration_min: 90
+    lat: 41.032
+    lon: 28.977
+  - time: '14:30'
+    name: Taksim Meydanı & Cumhuriyet Anıtı
+    type: meydan
+    duration_min: 30
+    lat: 41.037
+    lon: 28.9856
+  food:
+  - name: Asmalı Cavit
+    dish: meze & rakı
+    budget: ₺₺₺
+    address: Asmalımescit
+  - name: Dürümzade
+    dish: dürüm
+    budget: ₺₋₺₺
+    address: Kamer Hatun
+totals:
+  estimated_cost_try: 0
+  total_duration_min: 0

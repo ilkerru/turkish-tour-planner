@@ -1,0 +1,86 @@
+id: tr-istanbul-kuzguncuk-1d
+title: İstanbul (Kuzguncuk) — Mahalle Rotaları (1 Gün)
+region: İstanbul / Üsküdar / Kuzguncuk
+language: tr
+logistics:
+  season: İlkbahar & Sonbahar
+  best_time: Hafta içi sabah
+  transport: Yürüyüş
+  tips:
+  - Hafta sonu kalabalık olabilir; sabah erken başlayın.
+  - İbadethaneler için ziyaret kurallarını gözetin.
+days:
+- label: Kuzguncuk — İcadiye Aksı ve Sahil
+  cluster: İcadiye Caddesi • Sahil • Bostan • Dini Yapılar (hepsi 5–10 dk yürüyüş)
+  notes: Fotoğraf molaları için renkli sokaklar.
+  stops:
+  - time: 09:00
+    name: Kuzguncuk Sahili
+    type: yürüyüş
+    duration_min: 30
+    lat: 41.0376
+    lon: 29.0417
+  - time: 09:45
+    name: Kuzguncuk İcadiye Caddesi
+    type: mahalle
+    duration_min: 60
+    lat: 41.039
+    lon: 29.0413
+  - time: '11:00'
+    name: Beth Yaakov Sinagogu
+    type: sinagog
+    duration_min: 30
+    lat: 41.0399
+    lon: 29.0416
+    visit_hours: Topluluk programına bağlı, randevu ile.
+    closed_days:
+    - Dini takvim günleri — değişken
+  - time: '11:45'
+    name: Surp Krikor Lusavoriç Ermeni Kilisesi
+    type: kilise
+    duration_min: 20
+    lat: 41.0396
+    lon: 29.0417
+    visit_hours: Ziyaret saatleri kısıtlı olabilir; görevli ile görüşün.
+  - time: '12:15'
+    name: Kuzguncuk Camii
+    type: cami
+    duration_min: 20
+    lat: 41.0402
+    lon: 29.0419
+    visit_hours: İbadet saatleri dışında kısa ziyaret.
+  - time: '13:00'
+    name: Kuzguncuk Bostanı
+    type: park
+    duration_min: 30
+    lat: 41.0412
+    lon: 29.0424
+  - time: '14:00'
+    name: Nail Kitabevi & Kafe
+    type: kafe
+    duration_min: 45
+    lat: 41.0389
+    lon: 29.0414
+  - time: '15:00'
+    name: Çınaraltı Çay Bahçesi
+    type: kafe
+    duration_min: 45
+    lat: 41.038
+    lon: 29.0414
+  food:
+  - name: Ismet Baba
+    dish: balık
+    budget: ₺₺₺
+    address: Sahil
+    notes: Akşamüstü için rezervasyon bakılabilir.
+  - name: Çınaraltı
+    dish: çay-simit
+    budget: ₺
+    address: Sahil
+  - name: Nail Kitabevi Kafe
+    dish: kahvaltı & kahve
+    budget: ₺₋₺₺
+    address: İcadiye
+totals:
+  estimated_cost_try: 0
+  total_duration_min: 0
